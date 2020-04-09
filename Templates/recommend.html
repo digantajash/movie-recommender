@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="searchbox">
+        <form class="box">
+            <input class="searchbar" placeholder="Search movies..." type="text" name = "movie">
+            <input type="submit" class="searchbtn" value="Search">
+        </form>
+    </div>
+    <hr>
+
+    {% if y=='y' %}
+    <div>
+      <h3>Sorry! This movie is not in our database.</h3>
+      <h3 >Please check if you spelled it correct.</h3>
+      <h3">Or try with another movie.</h3>
+    </div>
+  
+    {% else %}
+    <h1>You Searched For :{{movie}}</h1>
+
+    <div class="row">
+        {% for m in recom %}
+        <div class="column">
+          <div class="card">
+            <h2>{{m|capitalize}}</h2>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% endif %}
+    
+</body>
+</html>
