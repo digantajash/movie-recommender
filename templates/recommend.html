@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='recstyle.css') }}" type="text/css" rel="stylesheet">
     <title>Document</title>
+    <style>
+        h1{
+    color: white;
+    }
+    h2{
+        font-family: comic sans ms;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    </style>
 </head>
 <body>
     <div class="searchbox">
@@ -14,9 +29,9 @@
 
     {% if y=='y' %}
     <div>
-      <h3>Sorry! This movie is not in our database.</h3>
-      <h3 >Please check if you spelled it correct.</h3>
-      <h3">Or try with another movie.</h3>
+      <h3 style="color:rgb(0, 102, 255)">Sorry! This movie is not in our database.</h3>
+      <h3 style="color:rgb(0, 102, 255)">Please check if you spelled it correct.</h3>
+      <h3 style="color:rgb(0, 102, 255)">Or try with another movie.</h3>
     </div>
   
     {% else %}

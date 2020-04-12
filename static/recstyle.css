@@ -1,0 +1,105 @@
+body{
+    background: #082136;
+}
+* {
+    box-sizing: border-box;
+  }
+.box{
+    margin: 400px;
+    margin-top: 20px;
+    background-color: #474242;
+    height: 65px;
+    width: 700px;
+    padding: 13px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.searchbar{
+    border: 0;
+    margin-top: 0px;
+    width: 70%;
+    height: 37px;
+    background: none;
+    border: 2px solid #3498db ;
+    padding: 10px;
+    outline: none;
+    color: white;
+    transition: 0.3s;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.searchbar:focus{
+    border-color: #2ecc71;
+}
+
+.searchbtn{
+    margin-left: 20px;
+    top: 0px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #3498db;
+    border: 2px solid #3498db;
+    height: 37px;
+    width: 10rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.searchbtn:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+hr{
+    border-width: 5px;
+    border-color: #3498db;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    word-wrap: break-word;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .box{
+      margin-left: 10px;
+      width: 98%;
+    }
+    .searchbar{
+      width: 56%;
+    }
+  }
