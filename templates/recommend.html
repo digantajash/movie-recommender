@@ -26,17 +26,14 @@
         </form>
     </div>
     <hr>
-
     {% if y=='y' %}
     <div>
       <h3 style="color:rgb(0, 102, 255)">Sorry! This movie is not in our database.</h3>
       <h3 style="color:rgb(0, 102, 255)">Please check if you spelled it correct.</h3>
       <h3 style="color:rgb(0, 102, 255)">Or try with another movie.</h3>
-    </div>
-  
+    </div> 
     {% else %}
     <h1>You Searched For :{{movie}}</h1>
-
     <div class="row">
         {% for m in recom %}
         <div class="column">
@@ -46,8 +43,6 @@
         </div>
         {% endfor %}
     </div>
-
-    {% endif %}
-    
+    {% endif %} 
 </body>
 </html>
