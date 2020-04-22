@@ -1,24 +1,19 @@
-body{
-    background: #082136;
-}
+
 * {
     box-sizing: border-box;
   }
 .box{
-    margin: 400px;
-    margin-top: 20px;
-    background-color: #474242;
+    margin: 0px;
+    margin-left: 2px;
     height: 65px;
-    width: 700px;
+    width: 100%;
     padding: 13px;
-    position: relative;
     border-radius: 10px;
 }
 
 .searchbar{
     border: 0;
-    margin-top: 0px;
-    width: 70%;
+    width: 5.5in;
     height: 37px;
     background: none;
     border: 2px solid #3498db ;
@@ -26,7 +21,7 @@ body{
     outline: none;
     color: white;
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     font-size: 15px;
 }
 .searchbar:focus{
@@ -34,16 +29,15 @@ body{
 }
 
 .searchbtn{
-    margin-left: 20px;
-    top: 0px;
-    border-radius: 10px;
+    margin-left: -3px;
+    border-radius: 0px 10px 10px 0px;
     border: none;
     outline: none;
     background: none;
     color: #3498db;
     border: 2px solid #3498db;
     height: 37px;
-    width: 10rem;
+    width: 6rem;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -55,9 +49,9 @@ body{
 }
 
 hr{
+  margin-top: 6px;
     border-width: 5px;
     border-color: #3498db;
-    margin-top: 50px;
     border-radius: 15px;
 }
 
@@ -88,18 +82,10 @@ hr{
   }
   
   /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 720px) {
     .column {
       width: 100%;
       display: block;
       margin-bottom: 20px;
-    }
-
-    .box{
-      margin-left: 10px;
-      width: 98%;
-    }
-    .searchbar{
-      width: 56%;
     }
   }
